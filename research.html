@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Runwei Zhou</title>
+<meta name="description" content="Research projects of Runwei Zhou: fast integral-equation solvers, physics-informed machine learning for Maxwell's equations, rank-revealing global optimization, and quantum device modeling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Runwei Zhou</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">About</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="assets/Runwei_Zhou_CV.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Research</h2>
+      <span class="tag">Six projects</span>
+    </div>
+    <div class="prose">
+      <p>My research develops numerical methods that make large electromagnetic, circuit, and quantum-device problems tractable — and that come with an error budget rather than a hope. The projects below are grouped by where the work was done.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="lab-head">
+      <h3>On-Chip Electromagnetics Laboratory, Purdue University</h3>
+      <p>Research Assistant · Advisor: Prof. Dan Jiao</p>
+    </div>
+
+    <div class="projects">
+
+      <article class="project">
+        <span class="label">Fast solvers</span>
+        <h3>Explicit rank-preserving solver for time-harmonic Maxwell's equations with broadband stability</h3>
+        <ul>
+          <li>Addresses the low-frequency breakdown of full-wave electromagnetic circuit analysis using a novel explicit rank stabilizer.</li>
+          <li>Runs in <em>O(N)</em> time with minimal additional computational effort.</li>
+          <li>Applied to large multi-scale integrated-circuit problems and to antenna analysis.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <span class="label">Machine learning</span>
+        <h3>Robust physics-informed, data-free machine learning for 3-D electromagnetic analysis</h3>
+        <ul>
+          <li>An unsupervised physics-informed neural network that solves Maxwell's equations with no training data.</li>
+          <li>Formulates a single objective loss that combines integral-equation and finite-element operators under complicated boundary conditions, so learning stays efficient.</li>
+          <li>Applied to large-scale IC simulation and to full-wave electromagnetic scattering.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <span class="label">Optimization</span>
+        <h3>Error-controlled rank-revealing method for large global optimization problems</h3>
+        <ul>
+          <li>An error-controlled, rank-revealing optimizer that beats Bayesian optimization, simulated annealing, and genetic algorithms on both runtime and reliability of finding the global optimum.</li>
+          <li>Applied to hard benchmark problems and to real designs: antenna optimization and floor planning for heterogeneously integrated semiconductor systems.</li>
+          <li>Extended to nonlinear optimization problems in machine learning.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <span class="label">Quantum devices</span>
+        <h3>Fast volume-integral-equation modeling of spin-qubit decoherence with non-reciprocal magnetic metasurfaces</h3>
+        <ul>
+          <li>A rapid solver for decoherence analysis in quantum spin systems.</li>
+          <li>Extensive numerical experiments validate the method on real non-reciprocal anisotropic magnetic metasurfaces used to control decoherence.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <span class="label">Quantum devices</span>
+        <h3>Fast well-conditioned VIE solver for nonlocal optical responses in quantum nanostructures</h3>
+        <ul>
+          <li>A fast solver for electromagnetic scattering problems arising in quantum device design.</li>
+          <li>Accelerates the volume integral equation while accounting for nonlocal microscopic optical response.</li>
+          <li>Used to simulate the limits that thermal and vacuum fluctuations place on two-spin-qubit gate fidelity.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="lab-head">
+      <h3>Helmholtz-Institut Mainz, Mainz University, Germany</h3>
+      <p>Visiting Scholar · Advisor: Prof. Dmitry Budker</p>
+    </div>
+    <div class="projects">
+      <article class="project">
+        <span class="label">Quantum sensing</span>
+        <h3>Reduced contrast of nitrogen-vacancy ensembles in diamond at zero magnetic field</h3>
+        <ul>
+          <li>Formulated and simulated the dynamics of nuclear spins in nitrogen-vacancy centers, a leading quantum-device platform.</li>
+          <li>Built the experimental platform and its control software, with measurements matching theoretical analysis.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="lab-head">
+      <h3>CAS Key Laboratory of Microscale Magnetic Resonance, USTC, China</h3>
+      <p>Research Assistant · Advisor: Prof. Xing Rong</p>
+    </div>
+    <div class="projects">
+      <article class="project">
+        <span class="label">Instrumentation</span>
+        <h3>High-sensitivity quantum magnetometer based on nitrogen-vacancy centers in diamond</h3>
+        <ul>
+          <li>Designed a new schematic for compact, high-sensitivity magnetometry using NV-ensemble diamond.</li>
+          <li>Built a working prototype reaching 500 pT/√Hz — twice the sensitivity of prior work.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="prose">
+      <p>Details, preprints, or code for any of these are available on request — <a href="mailto:runwzhou@purdue.edu">runwzhou@purdue.edu</a>.</p>
+      <div class="cta">
+        <a class="button solid" href="publications.html">See publications</a>
+        <a class="button" href="assets/Runwei_Zhou_CV.pdf">Download CV (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>Runwei Zhou · West Lafayette, Indiana</span>
+    <span>Last updated July 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
